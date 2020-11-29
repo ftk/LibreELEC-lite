@@ -10,6 +10,7 @@ PKG_SITE="http://lse.sourceforge.net/io/aio.html"
 PKG_URL="http://http.debian.net/debian/pool/main/liba/libaio/${PKG_NAME}_${PKG_VERSION}.orig.tar.xz"
 PKG_DEPENDS_TARGET="toolchain"
 PKG_LONGDESC="Kernel Asynchronous I/O (AIO) Support for Linux."
+PKG_BUILD_FLAGS="-lto"
 
 make_target() {
   make -C src

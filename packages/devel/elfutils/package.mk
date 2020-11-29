@@ -12,7 +12,7 @@ PKG_DEPENDS_HOST="make:host zlib:host"
 PKG_DEPENDS_TARGET="toolchain zlib elfutils:host"
 PKG_LONGDESC="A collection of utilities to handle ELF objects."
 PKG_TOOLCHAIN="autotools"
-PKG_BUILD_FLAGS="+pic"
+PKG_BUILD_FLAGS="+pic -lto"
 
 if [ "${LIBREELEC_VERSION}" = "devel" ]; then
   PKG_PROGRAMS="--enable-programs --program-prefix="
