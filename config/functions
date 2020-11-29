@@ -218,7 +218,7 @@ setup_toolchain() {
       TARGET_CFLAGS+=" $FLAGS_OPTIM_LTO_NO_PARALLEL $FLAGS_OPTIM_LTO_FAT"
       TARGET_CXXFLAGS+=" $FLAGS_OPTIM_LTO_NO_PARALLEL $FLAGS_OPTIM_LTO_FAT"
       TARGET_LDFLAGS+=" $LDFLAGS_OPTIM_LTO_COMMON $FLAGS_OPTIM_LTO_NO_PARALLEL"
-    elif flag_enabled "lto" "no"; then
+    elif flag_enabled "lto" "yes"; then
       TARGET_CFLAGS+=" $FLAGS_OPTIM_LTO_NO_PARALLEL $FLAGS_OPTIM_LTO_NO_FAT"
       TARGET_CXXFLAGS+=" $FLAGS_OPTIM_LTO_NO_PARALLEL $FLAGS_OPTIM_LTO_NO_FAT"
       TARGET_LDFLAGS+=" $LDFLAGS_OPTIM_LTO_COMMON $FLAGS_OPTIM_LTO_NO_PARALLEL"
@@ -251,7 +251,7 @@ setup_toolchain() {
   elif flag_enabled "speed" "no"; then
     TARGET_CFLAGS+=" $CFLAGS_OPTIM_SPEED"
     TARGET_CXXFLAGS+=" $CXXFLAGS_OPTIM_SPEED"
-  elif flag_enabled "size" "no"; then
+  elif flag_enabled "size" "yes"; then
     TARGET_CFLAGS+=" $CFLAGS_OPTIM_SIZE"
     TARGET_CXXFLAGS+=" $CXXFLAGS_OPTIM_SIZE"
   else
