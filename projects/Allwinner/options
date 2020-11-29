@@ -61,3 +61,10 @@
 
   # debug tty path
     DEBUG_TTY="/dev/console"
+
+  # wifi driver
+    ADDITIONAL_DRIVERS="$ADDITIONAL_DRIVERS RTL8189FS"
+
+AVAHI_DAEMON="no"
+
+PULSEAUDIO_SUPPORT="no"
