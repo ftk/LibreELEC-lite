@@ -1,0 +1,11 @@
+--- RTL8189FS-rtl8189fs/include/rtw_debug.h	2020-03-30 23:46:17.000000000 +0300
++++ /var/tmp/rtw_debug.h	2020-07-29 10:10:26.133566303 +0300
+@@ -185,7 +185,7 @@
+ 	#define _dbgdump rtl871x_cedbg
+ 	#define _seqdump(sel, fmt, arg...) _dbgdump(fmt, ##arg)
+ #elif defined PLATFORM_LINUX
+-	#define _dbgdump printk
++	#define _dbgdump pr_debug
+ 	#define _seqdump seq_printf
+ #elif defined PLATFORM_FREEBSD
+ 	#define _dbgdump printf

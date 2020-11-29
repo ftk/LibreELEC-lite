@@ -1,0 +1,11 @@
+--- RTL8189FS-rtl8189fs/include/autoconf.h	2020-07-29 10:15:45.493207760 +0300
++++ /var/tmp/autoconf.h	2020-07-29 10:08:58.698766581 +0300
+@@ -224,7 +224,7 @@
+ /*
+  * Debug Related Config
+  */
+-#define CONFIG_DEBUG /* DBG_871X, etc... */
++//#define CONFIG_DEBUG /* DBG_871X, etc... */
+ 
+ #ifdef CONFIG_DEBUG
+ #define DBG	1	// for ODM & BTCOEX debug
