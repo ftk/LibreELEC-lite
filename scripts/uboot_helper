@@ -82,6 +82,10 @@ devices = \
         'dtb': 'sun8i-h3-orangepi-plus.dtb',
         'config': 'orangepi_plus_defconfig'
       },
+      'orangepi-lite': {
+        'dtb': 'sun8i-h3-orangepi-lite.dtb',
+        'config': 'orangepi_lite_defconfig'
+      },
     },
     'H5' : {
       'orangepi-pc2': {
